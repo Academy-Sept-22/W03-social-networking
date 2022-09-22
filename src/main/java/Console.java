@@ -1,8 +1,13 @@
+import java.util.ArrayList;
+
 public class Console {
 
-    public void print(String post) {
+    public void print(ArrayList<Post> posts) {
 
-        System.out.println(post);
+        for (Post post:
+             posts) {
+            System.out.println(post.message);
+        }
     }
 
 }

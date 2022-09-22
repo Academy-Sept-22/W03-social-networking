@@ -1,17 +1,22 @@
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Date;
 
 public class User {
-
-    public ArrayList<User> followers;
     public String userFirstName;
+    private ArrayList<Post> posts;
+    //private int totalNumberOfFollowers;
 
     public User(String userFirstName) {
-        this.followers = new ArrayList<>();
         this.userFirstName = userFirstName;
-//        this.postHistory;
-//        this.wall;
+        posts = new ArrayList();
     }
 
+    public void addPosts(String post) {
+        Post newPost = new Post(userFirstName, post, new Date());
+        posts.add(newPost);
+    }
 
+    public ArrayList<Post> getPosts() {
+        return posts;
+    }
 }
