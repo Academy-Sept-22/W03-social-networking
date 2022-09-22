@@ -10,6 +10,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.mockito:mockito-all:1.10.19'
+    implementation 'org.mockito:junit-jupiter:2.20.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
